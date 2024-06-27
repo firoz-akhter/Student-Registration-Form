@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Student Registration</title>
+  </head>
+  <body>
+
+    <!-- header of the webpage -->
+    <header class="header">
+      <h1>Student Registration for Farewell</h1>
+      <p>Fill the details required below to add your name in the list so we can start practice session early.</p>
+      <p>For Candidates who are interested and want to participate in the Farewell's program.</p>
+    </header>
+
+    <!-- Student form -->
+    <form class="form">
+      <input type="text" class="name-input" placeholder="Name" />
+      <input type="text" class="id-input" placeholder="Id" />
+      <input type="email" class="email-input" placeholder="Email" />
+      <input type="text" class="contact-input" name="" placeholder="Contact">
+      <button class="add-button" type="submit">
+        <i class="fas fa-plus-square"></i>
+      </button>
+    </form>
+
+    <!-- Display section -->
+    <section class="student-container">
+      <ul class="student-list">
+        <div class="student">
+          <li class="student-item">Name:</li>
+          <li class="student-item">Id:</li>
+          <li class="student-item">Email:</li>
+          <li class="student-item contact-list-item margin-right">Contact:</li>
+          <p class="student-item">Buttons:</p>
+        </div>
+      </ul>
+    </section>
+
+    <!-- edit form -->
+    <div class="pop-up">
+      <p class="close-btn"><i class="fas fa-cut"></i></p>
+      <div class="edit-form-div">
+        <h2>Edit Student</h2>
+        <input class="edit-name-input" type="text">
+        <input class="edit-id-input" type="text" readonly>
+        <input class="edit-email-input" type="text">
+        <input class="edit-contact-input" type="text">
+        <span style="color: red">Alert: &nbsp;</span><span class="alert-msg"> Everything seems fine </span>
+        <button class="save-btn" type="submit">Save</button>
+      </div>
+      <br><span class="note">Note: Id can't be changed. In case you want to update Id, go back delete and make a new Entry</span>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
