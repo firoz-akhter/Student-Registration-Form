@@ -324,6 +324,14 @@ saveBtn.addEventListener("click", function(e) {
 })
 
 
+// dynamic scroll bar on body 
+document.addEventListener("DOMContentLoaded",  function() {
+  document.querySelector(".body").classList.add("dynamic-scroll");
+  console.log("adding dynamic scroll bar to body element")
+}                         
+);
+
+
 
 // helper functions for validation ------------------>
 function hasNumber(myString) {
